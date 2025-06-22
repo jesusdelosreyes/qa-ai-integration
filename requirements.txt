@@ -1,0 +1,8 @@
+openai
+langchain
+streamlit
+pytest
+selenium
+webdriver-manager
+requests
+langchain-community
