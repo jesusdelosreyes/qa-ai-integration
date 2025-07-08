@@ -1,4 +1,12 @@
 .env
+__pycache__/
+tempCodeRunnerFile.python
+test_generated.py
+.venv/
+qa-agent/
+__pycache__/
 *.pyc
 *.log
-__pycache__/
+.pytest_cache/
+tests/test_generated.py
+.DS_Store
