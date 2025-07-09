@@ -24,23 +24,23 @@ Jesus De Los Reyes
 
 ## ----------------------------------------------------------------------------------
 
-## 🤖 AI Model Selection Strategy
+## AI Model Selection Strategy
 
 This QA Agent uses OpenAI's LLMs via LangChain. Depending on use case (cost, speed, or intelligence), you can switch models in `test_generator.py`.
 
-### 🔍 Why GPT-4.1 Mini?
+### Why GPT-4.1 Mini?
 
-- ✅ Balanced cost vs quality ($0.40 input / $1.60 output per 1M tokens)
-- 🚀 Fast generation for tests (Web/API) under 1s
-- 🧠 Smart enough to generate valid Selenium, Requests, and Pytest code
+- Balanced cost vs quality ($0.40 input / $1.60 output per 1M tokens)
+- Fast generation for tests (Web/API) under 1s
+- Smart enough to generate valid Selenium, Requests, and Pytest code
 
-### 🧪 Token Primer
+### Token Primer
 
 - **Tokens** are chunks of words (≈ 750 tokens ≈ 1 page of text)
 - You pay for **input + output**
 - **Cached inputs** (reused prompts) are cheaper
 
-### 💰 Estimated Cost per Test Prompt
+### Estimated Cost per Test Prompt
 
 | Model         | Input (100t) | Output (500t) | Total Cost  |
 |---------------|--------------|----------------|-------------|
@@ -49,7 +49,7 @@ This QA Agent uses OpenAI's LLMs via LangChain. Depending on use case (cost, spe
 
 Switching to `gpt-4.1-nano` can reduce cost further for low-stakes tests.
 
-### ⚙️ Model configuration (in `test_generator.py`)
+### Model configuration (in `test_generator.py`)
 
 ```python
 llm = OpenAI(
